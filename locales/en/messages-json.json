@@ -1,0 +1,174 @@
+{
+  "appName": {
+    "message": "NetScope Guardian",
+    "description": "The name of the extension"
+  },
+  "appDescription": {
+    "message": "AI-powered browser threat contextualizer using Google Gemini Flash 2.0 for real-time security analysis",
+    "description": "The description of the extension"
+  },
+  "popupTitle": {
+    "message": "NetScope Guardian - Security Dashboard",
+    "description": "Title for the popup window"
+  },
+  "analyzeIndicator": {
+    "message": "🛡️ Analyze with NetScope Guardian",
+    "description": "Context menu item text"
+  },
+  "threatAnalysisTitle": {
+    "message": "Threat Intelligence Analysis",
+    "description": "Title for threat analysis section"
+  },
+  "securityHeadersTitle": {
+    "message": "Security Headers Assessment", 
+    "description": "Title for security headers section"
+  },
+  "networkActivityTitle": {
+    "message": "Network Activity Monitor",
+    "description": "Title for network monitoring section"
+  },
+  "geminiAnalysisTitle": {
+    "message": "🤖 Gemini AI Insight",
+    "description": "Title for AI analysis section"
+  },
+  "threatScoreHigh": {
+    "message": "High Risk",
+    "description": "High threat score label"
+  },
+  "threatScoreMedium": {
+    "message": "Medium Risk", 
+    "description": "Medium threat score label"
+  },
+  "threatScoreLow": {
+    "message": "Low Risk",
+    "description": "Low threat score label"
+  },
+  "threatScoreClean": {
+    "message": "Clean",
+    "description": "Clean/safe threat score label"
+  },
+  "analyzeCurrentPage": {
+    "message": "Analyze Current Page",
+    "description": "Button text to analyze current page"
+  },
+  "openDashboard": {
+    "message": "Open Dashboard",
+    "description": "Button text to open main dashboard"
+  },
+  "quickScan": {
+    "message": "Quick Scan",
+    "description": "Button text for quick page scan"
+  },
+  "securityStatus": {
+    "message": "Security Status",
+    "description": "Label for security status"
+  },
+  "connectionStatus": {
+    "message": "Connection Status", 
+    "description": "Label for backend connection status"
+  },
+  "backendConnected": {
+    "message": "Backend Connected",
+    "description": "Status when backend is connected"
+  },
+  "backendDisconnected": {
+    "message": "Backend Disconnected",
+    "description": "Status when backend is disconnected"
+  },
+  "loadingAnalysis": {
+    "message": "Analyzing with AI...",
+    "description": "Loading message during analysis"
+  },
+  "analysisComplete": {
+    "message": "Analysis Complete",
+    "description": "Message when analysis is finished"
+  },
+  "noThreatsFound": {
+    "message": "No threats detected",
+    "description": "Message when no threats are found"
+  },
+  "threatsDetected": {
+    "message": "Threats detected",
+    "description": "Message when threats are found"
+  },
+  "recommendationsTitle": {
+    "message": "Recommendations",
+    "description": "Title for recommendations section"
+  },
+  "mitigationStepsTitle": {
+    "message": "Mitigation Steps",
+    "description": "Title for mitigation steps section"
+  },
+  "detailsTitle": {
+    "message": "Technical Details",
+    "description": "Title for technical details section"
+  },
+  "poweredBy": {
+    "message": "Powered by Gemini 2.0 • Secure by Design",
+    "description": "Footer attribution text"
+  },
+  "version": {
+    "message": "Version 1.0.0",
+    "description": "Version information"
+  },
+  "errorAnalysisFailed": {
+    "message": "Analysis failed. Please try again.",
+    "description": "Error message for failed analysis"
+  },
+  "errorBackendUnavailable": {
+    "message": "Backend server unavailable. Please start the server.",
+    "description": "Error message when backend is not running"
+  },
+  "errorInvalidIndicator": {
+    "message": "Invalid indicator format.",
+    "description": "Error message for invalid indicators"
+  },
+  "successAnalysisComplete": {
+    "message": "Analysis completed successfully!",
+    "description": "Success message for completed analysis"
+  },
+  "successPageScanned": {
+    "message": "Page scanned successfully!",
+    "description": "Success message for page scan"
+  },
+  "indicatorsFoundMessage": {
+    "message": "security indicators found on this page",
+    "description": "Message template for indicators count"
+  },
+  "rightClickHint": {
+    "message": "💡 Right-click any IP, domain, or hash for AI analysis",
+    "description": "Helpful hint for users"
+  },
+  "welcomeTitle": {
+    "message": "Welcome to NetScope Guardian",
+    "description": "Welcome screen title"
+  },
+  "welcomeSubtitle": {
+    "message": "AI-powered browser security analysis",
+    "description": "Welcome screen subtitle"
+  },
+  "featureRealTimeAnalysis": {
+    "message": "Right-click any IP, domain, or hash for instant AI analysis",
+    "description": "Feature description"
+  },
+  "featureSecurityHeaders": {
+    "message": "Automatic security headers evaluation",
+    "description": "Feature description"
+  },
+  "featureNetworkMonitoring": {
+    "message": "Real-time network monitoring and threat detection",
+    "description": "Feature description"
+  },
+  "featureAIPowered": {
+    "message": "Google Gemini Flash 2.0 powered explanations",
+    "description": "Feature description"
+  },
+  "getStartedButton": {
+    "message": "Analyze Current Page",
+    "description": "Get started button text"
+  },
+  "helpText": {
+    "message": "Or highlight any indicator on a webpage and right-click",
+    "description": "Help text for getting started"
+  }
+}

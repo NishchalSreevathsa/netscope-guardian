@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetScope Guardian</title>
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-section">
+                <div class="logo">🛡️</div>
+                <h1>NetScope Guardian</h1>
+            </div>
+            <div class="header-controls">
+                <button id="settings-btn" class="icon-btn" title="Settings">⚙️</button>
+                <button id="theme-toggle" class="icon-btn" title="Toggle Theme">🌙</button>
+            </div>
+        </header>
+
+        <!-- Search Bar -->
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Enter IP, domain, URL, or hash..." />
+                <button id="search-btn" class="search-btn">🔍</button>
+            </div>
+            <div class="quick-actions">
+                <button class="quick-btn" data-action="current-page">Current Page</button>
+                <button class="quick-btn" data-action="network-monitor">Network</button>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loading-state" class="loading-state" style="display: none;">
+            <div class="spinner"></div>
+            <p>Analyzing with AI...</p>
+        </div>
+
+        <!-- Results Container -->
+        <div id="results-container" class="results-container">
+            
+            <!-- Threat Intelligence Card -->
+            <div id="threat-card" class="card" style="display: none;">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-icon">🎯</span>
+                        <span>Threat Intelligence</span>
+                    </div>
+                    <div id="threat-score" class="threat-score"></div>
+                </div>
+                <div class="card-content">
+                    <div class="indicator-info">
+                        <div class="indicator-display">
+                            <span id="indicator-text" class="indicator-text"></span>
+                            <span id="indicator-type" class="indicator-type"></span>
+                        </div>
+                        <div class="indicator-meta">
+                            <span id="last-seen">Last seen: --</span>
+                            <div class="external-links">
+                                <a href="#" id="virustotal-link" target="_blank" class="external-link">VirusTotal</a>
+                                <a href="#" id="abuseipdb-link" target="_blank" class="external-link">AbuseIPDB</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gemini-insight">
+                        <h4>🤖 Gemini AI Insight:</h4>
+                        <p id="gemini-analysis">Analysis will appear here...</p>
+                    </div>
+                    
+                    <div class="expandable-sections">
+                        <div class="expandable-section">
+                            <button class="expand-btn" data-target="details">Details ▼</button>
+                            <div id="details" class="expandable-content">
+                                <ul id="threat-details"></ul>
+                            </div>
+                        </div>
+                        
+                        <div class="expandable-section">
+                            <button class="expand-btn" data-target="mitigation">Mitigation Steps ▼</button>
+                            <div id="mitigation" class="expandable-content">
+                                <ul id="mitigation-steps"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Headers Card -->
+            <div id="headers-card" class="card" style="display: none;">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-icon">🔒</span>
+                        <span>Security Headers</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="headers-grid" id="headers-grid">
+                        <!-- Headers will be populated here -->
+                    </div>
+                    <div class="gemini-insight">
+                        <h4>🤖 Security Assessment:</h4>
+                        <p id="headers-analysis">Analysis will appear here...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Network Activity Card -->
+            <div id="network-card" class="card" style="display: none;">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span class="card-icon">🌐</span>
+                        <span>Network Activity</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="network-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Total Requests:</span>
+                            <span id="total-requests" class="stat-value">--</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Suspicious:</span>
+                            <span id="suspicious-requests" class="stat-value">--</span>
+                        </div>
+                    </div>
+                    
+                    <div class="network-list" id="network-list">
+                        <!-- Network requests will be populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Welcome Screen -->
+            <div id="welcome-screen" class="welcome-screen">
+                <div class="welcome-icon">🛡️</div>
+                <h2>Welcome to NetScope Guardian</h2>
+                <p>AI-powered browser security analysis</p>
+                
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <span class="feature-icon">🎯</span>
+                        <span>Right-click any IP, domain, or hash for instant AI analysis</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🔒</span>
+                        <span>Automatic security headers evaluation</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🌐</span>
+                        <span>Real-time network monitoring and threat detection</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🤖</span>
+                        <span>Google Gemini Flash 2.0 powered explanations</span>
+                    </div>
+                </div>
+                
+                <div class="get-started">
+                    <button id="analyze-current-btn" class="primary-btn">Analyze Current Page</button>
+                    <p class="help-text">Or highlight any indicator on a webpage and right-click</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="powered-by">
+                <span>Powered by</span>
+                <strong>Gemini 2.0</strong>
+                <span>•</span>
+                <span>Secure by Design</span>
+            </div>
+            <div class="version">v1.0.0</div>
+        </footer>
+    </div>
+
+    <script src="sidebar.js"></script>
+</body>
+</html>

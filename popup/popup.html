@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetScope Guardian</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <header class="popup-header">
+            <div class="logo-section">
+                <div class="logo">🛡️</div>
+                <h1>NetScope Guardian</h1>
+            </div>
+            <div class="status-indicator" id="status-indicator"></div>
+        </header>
+
+        <div class="quick-actions">
+            <button class="action-btn primary" id="open-dashboard">
+                <span class="btn-icon">📊</span>
+                <div class="btn-content">
+                    <div class="btn-title">Open Dashboard</div>
+                    <div class="btn-subtitle">Full analysis interface</div>
+                </div>
+            </button>
+            
+            <button class="action-btn" id="analyze-page">
+                <span class="btn-icon">🔍</span>
+                <div class="btn-content">
+                    <div class="btn-title">Analyze Page</div>
+                    <div class="btn-subtitle">Security headers & network</div>
+                </div>
+            </button>
+            
+            <button class="action-btn" id="quick-scan">
+                <span class="btn-icon">⚡</span>
+                <div class="btn-content">
+                    <div class="btn-title">Quick Scan</div>
+                    <div class="btn-subtitle">Find indicators on page</div>
+                </div>
+            </button>
+        </div>
+
+        <div class="page-info">
+            <div class="page-header">
+                <h3>Current Page</h3>
+                <div class="security-badge" id="security-badge">
+                    <span id="security-status">Checking...</span>
+                </div>
+            </div>
+            
+            <div class="page-details">
+                <div class="page-url" id="page-url">Loading...</div>
+                <div class="page-stats">
+                    <div class="stat-item">
+                        <span class="stat-icon">🌐</span>
+                        <span class="stat-text">
+                            <span id="request-count">--</span> requests
+                        </span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-icon">⚠️</span>
+                        <span class="stat-text">
+                            <span id="threat-count">--</span> threats
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-tips">
+            <div class="tip-item">
+                <span class="tip-icon">💡</span>
+                <span class="tip-text">Right-click any IP, domain, or hash for AI analysis</span>
+            </div>
+        </div>
+
+        <footer class="popup-footer">
+            <div class="version">v1.0.0</div>
+            <div class="powered-by">Powered by <strong>Gemini 2.0</strong></div>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
