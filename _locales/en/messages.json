@@ -1,0 +1,50 @@
+{
+    "appName": {
+        "message": "NetScope Guardian",
+        "description": "The name of the extension"
+    },
+    "appDescription": {
+        "message": "AI-powered browser threat contextualizer using Google Gemini 1.5 Flash for real-time security analysis",
+        "description": "The description of the extension"
+    },
+    "popupTitle": {
+        "message": "NetScope Guardian - Security Dashboard",
+        "description": "Title for the popup window"
+    },
+    "analyzeIndicator": {
+        "message": "🛡️ Analyze with NetScope Guardian",
+        "description": "Context menu item text"
+    },
+    "threatAnalysisTitle": {
+        "message": "Threat Intelligence Analysis",
+        "description": "Title for threat analysis section"
+    },
+    "securityHeadersTitle": {
+        "message": "Security Headers Assessment",
+        "description": "Title for security headers section"
+    },
+    "networkActivityTitle": {
+        "message": "Network Activity Monitor",
+        "description": "Title for network monitoring section"
+    },
+    "geminiAnalysisTitle": {
+        "message": "🤖 Gemini AI Insight",
+        "description": "Title for AI analysis section"
+    },
+    "threatScoreHigh": {
+        "message": "High Risk",
+        "description": "High threat score label"
+    },
+    "threatScoreMedium": {
+        "message": "Medium Risk",
+        "description": "Medium threat score label"
+    },
+    "threatScoreLow": {
+        "message": "Low Risk",
+        "description": "Low threat score label"
+    },
+    "threatScoreClean": {
+        "message": "Clean",
+        "description": "Clean/safe threat score label"
+    }
+}

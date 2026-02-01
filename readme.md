@@ -12,7 +12,7 @@
 
 ## 🎯 **Project Overview**
 
-**NetScope Guardian** is a cutting-edge Chrome extension that revolutionizes browser security analysis by combining real-time threat intelligence with advanced AI capabilities. Built with Google Gemini Flash 2.0, it provides instant, contextual security assessments for any web resource—transforming complex threat data into actionable insights that anyone can understand.
+**NetScope Guardian** is a cutting-edge Chrome extension that revolutionizes browser security analysis by combining real-time threat intelligence with advanced AI capabilities. Built with **Google Gemini Flash (Latest)**, it provides instant, contextual security assessments for any web resource—transforming complex threat data into actionable insights that anyone can understand.
 
 ### **The Problem We Solve**
 
@@ -36,7 +36,7 @@ NetScope Guardian bridges the gap between raw security data and actionable intel
 ## 🚀 **Key Features**
 
 ### 🤖 **AI-Powered Analysis**
-- **Google Gemini Flash 2.0 Integration** - Latest AI model for fast, accurate threat analysis
+- **Google Gemini Flash (Latest) Integration** - Latest AI model for fast, accurate threat analysis
 - **Natural Language Explanations** - Complex security data explained in simple terms
 - **Contextual Intelligence** - Understanding of current threat landscape and attack patterns
 - **Educational Insights** - Learn *why* something is dangerous, not just *that* it is

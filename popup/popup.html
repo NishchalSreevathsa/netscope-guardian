@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetScope Guardian</title>
     <link rel="stylesheet" href="popup.css">
 </head>
+
 <body>
     <div class="popup-container">
         <header class="popup-header">
@@ -24,7 +26,7 @@
                     <div class="btn-subtitle">Full analysis interface</div>
                 </div>
             </button>
-            
+
             <button class="action-btn" id="analyze-page">
                 <span class="btn-icon">🔍</span>
                 <div class="btn-content">
@@ -32,7 +34,7 @@
                     <div class="btn-subtitle">Security headers & network</div>
                 </div>
             </button>
-            
+
             <button class="action-btn" id="quick-scan">
                 <span class="btn-icon">⚡</span>
                 <div class="btn-content">
@@ -49,23 +51,10 @@
                     <span id="security-status">Checking...</span>
                 </div>
             </div>
-            
+
             <div class="page-details">
                 <div class="page-url" id="page-url">Loading...</div>
-                <div class="page-stats">
-                    <div class="stat-item">
-                        <span class="stat-icon">🌐</span>
-                        <span class="stat-text">
-                            <span id="request-count">--</span> requests
-                        </span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-icon">⚠️</span>
-                        <span class="stat-text">
-                            <span id="threat-count">--</span> threats
-                        </span>
-                    </div>
-                </div>
+                <!-- Stats removed by user request -->
             </div>
         </div>
 
@@ -84,4 +73,5 @@
 
     <script src="popup.js"></script>
 </body>
+
 </html>

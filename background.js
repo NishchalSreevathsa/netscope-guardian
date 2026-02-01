@@ -1,5 +1,5 @@
 // NetScope Guardian Background Service Worker
-const BACKEND_URL = 'http://localhost:8000';
+const BACKEND_URL = 'http://localhost:8080'; // FIXED: Port 8080
 let networkRequests = [];
 let suspiciousActivity = [];
 

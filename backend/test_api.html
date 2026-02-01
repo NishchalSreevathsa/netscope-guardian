@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NetScope API Tester</title>
+    <style>
+        body {
+            font-family: monospace;
+            background: #1a1a1a;
+            color: #0f0;
+            padding: 20px;
+        }
+
+        .status {
+            padding: 10px;
+            border: 1px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .success {
+            color: #0f0;
+            border-color: #0f0;
+        }
+
+        .error {
+            color: #f00;
+            border-color: #f00;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #444;
+        }
+
+        pre {
+            background: #222;
+            padding: 10px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>NetScope API Tester (Port 8080)</h1>
+    <div id="status" class="status">Checking connection...</div>
+    <button onclick="testConnection()">Test Connection Again</button>
+
+    <h3>API Response:</h3>
+    <pre id="output">Waiting...</pre>
+
+    <script>
+        async function testConnection() {
+            const status = document.getElementById('status');
+            const output = document.getElementById('output');
+
+            status.textContent = "Connecting to http://localhost:8080...";
+            status.className = "status";
+
+            try {
+                // Fetch from Port 8080
+                const response = await fetch('http://localhost:8080/');
+                const data = await response.json();
+
+                status.textContent = "✅ CONNECTED! Backend is running on Port 8080.";
+                status.className = "status success";
+                output.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                status.textContent = "❌ CONNECTION FAILED: " + error.message;
+                status.className = "status error";
+                output.textContent = "Ensure backend is running (python main.py)";
+            }
+        }
+
+        // Auto-run
+        testConnection();
+    </script>
+</body>
+
+</html>

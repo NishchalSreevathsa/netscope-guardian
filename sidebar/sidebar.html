@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetScope Guardian</title>
     <link rel="stylesheet" href="sidebar.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Header -->
@@ -23,12 +25,12 @@
         <!-- Search Bar -->
         <div class="search-section">
             <div class="search-container">
-                <input type="text" id="search-input" placeholder="Enter IP, domain, URL, or hash..." />
+                <input type="text" id="search-input" placeholder="Enter IP, domain, URL, email, or hash..." />
                 <button id="search-btn" class="search-btn">🔍</button>
             </div>
             <div class="quick-actions">
-                <button class="quick-btn" data-action="current-page">Current Page</button>
-                <button class="quick-btn" data-action="network-monitor">Network</button>
+                <!-- FIX #6: REMOVED "Current Page" button - use popup instead -->
+                <button class="quick-btn" data-action="network-monitor">🌐 Network Monitor</button>
             </div>
         </div>
 
@@ -40,7 +42,7 @@
 
         <!-- Results Container -->
         <div id="results-container" class="results-container">
-            
+
             <!-- Threat Intelligence Card -->
             <div id="threat-card" class="card" style="display: none;">
                 <div class="card-header">
@@ -59,27 +61,27 @@
                         <div class="indicator-meta">
                             <span id="last-seen">Last seen: --</span>
                             <div class="external-links">
-                                <a href="#" id="virustotal-link" target="_blank" class="external-link">VirusTotal</a>
-                                <a href="#" id="abuseipdb-link" target="_blank" class="external-link">AbuseIPDB</a>
+                                <a href="#" id="virustotal-link" target="_blank" class="external-link">VirusTotal ↗</a>
+                                <a href="#" id="abuseipdb-link" target="_blank" class="external-link">AbuseIPDB ↗</a>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="gemini-insight">
                         <h4>🤖 Gemini AI Insight:</h4>
                         <p id="gemini-analysis">Analysis will appear here...</p>
                     </div>
-                    
+
                     <div class="expandable-sections">
                         <div class="expandable-section">
-                            <button class="expand-btn" data-target="details">Details ▼</button>
+                            <button class="expand-btn" data-target="details">📋 Technical Details ▼</button>
                             <div id="details" class="expandable-content">
                                 <ul id="threat-details"></ul>
                             </div>
                         </div>
-                        
+
                         <div class="expandable-section">
-                            <button class="expand-btn" data-target="mitigation">Mitigation Steps ▼</button>
+                            <button class="expand-btn" data-target="mitigation">🛡️ Mitigation Steps ▼</button>
                             <div id="mitigation" class="expandable-content">
                                 <ul id="mitigation-steps"></ul>
                             </div>
@@ -93,14 +95,14 @@
                 <div class="card-header">
                     <div class="card-title">
                         <span class="card-icon">🔒</span>
-                        <span>Security Headers</span>
+                        <span>Security Headers Analysis</span>
                     </div>
                 </div>
                 <div class="card-content">
                     <div class="headers-grid" id="headers-grid">
                         <!-- Headers will be populated here -->
                     </div>
-                    <div class="gemini-insight">
+                    <div class="gemini-insight" style="max-height: 500px; overflow-y: auto;">
                         <h4>🤖 Security Assessment:</h4>
                         <p id="headers-analysis">Analysis will appear here...</p>
                     </div>
@@ -112,7 +114,7 @@
                 <div class="card-header">
                     <div class="card-title">
                         <span class="card-icon">🌐</span>
-                        <span>Network Activity</span>
+                        <span>Network Activity Monitor</span>
                     </div>
                 </div>
                 <div class="card-content">
@@ -126,7 +128,7 @@
                             <span id="suspicious-requests" class="stat-value">--</span>
                         </div>
                     </div>
-                    
+
                     <div class="network-list" id="network-list">
                         <!-- Network requests will be populated here -->
                     </div>
@@ -137,8 +139,8 @@
             <div id="welcome-screen" class="welcome-screen">
                 <div class="welcome-icon">🛡️</div>
                 <h2>Welcome to NetScope Guardian</h2>
-                <p>AI-powered browser security analysis</p>
-                
+                <p>AI-powered browser security analysis with Google Gemini 2.0</p>
+
                 <div class="feature-list">
                     <div class="feature-item">
                         <span class="feature-icon">🎯</span>
@@ -146,7 +148,7 @@
                     </div>
                     <div class="feature-item">
                         <span class="feature-icon">🔒</span>
-                        <span>Automatic security headers evaluation</span>
+                        <span>Automatic security headers evaluation for any website</span>
                     </div>
                     <div class="feature-item">
                         <span class="feature-icon">🌐</span>
@@ -154,13 +156,14 @@
                     </div>
                     <div class="feature-item">
                         <span class="feature-icon">🤖</span>
-                        <span>Google Gemini Flash 2.0 powered explanations</span>
+                        <span>Natural language explanations powered by Gemini Flash 2.0</span>
                     </div>
                 </div>
-                
+
                 <div class="get-started">
-                    <button id="analyze-current-btn" class="primary-btn">Analyze Current Page</button>
-                    <p class="help-text">Or highlight any indicator on a webpage and right-click</p>
+                    <button id="analyze-current-btn" class="primary-btn">🔍 Analyze Current Page</button>
+                    <p class="help-text">Or highlight any indicator on a webpage and right-click<br>Or search manually
+                        using the search box above</p>
                 </div>
             </div>
         </div>
@@ -179,4 +182,5 @@
 
     <script src="sidebar.js"></script>
 </body>
+
 </html>
