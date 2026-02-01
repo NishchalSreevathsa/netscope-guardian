@@ -67,6 +67,88 @@ NetScope Guardian bridges the gap between raw security data and actionable intel
 
 ---
 
+## 🔐 **Security & Privacy**
+
+### **Privacy-First Design**
+- ✅ **Local Processing** - All analysis happens locally or via your private backend
+- ✅ **No Data Collection** - Extension doesn't collect or store browsing history
+- ✅ **Minimal Permissions** - Only requests necessary Chrome API access
+- ✅ **No Telemetry** - Zero tracking or analytics
+- ✅ **Open Source** - Full transparency of code and operations
+
+### **Security Best Practices**
+- ✅ **Input Validation** - All user inputs sanitized and validated
+- ✅ **CSP Compliant** - Content Security Policy enforced
+- ✅ **Rate Limiting** - Backend API protected from abuse
+- ✅ **HTTPS Only** - Secure communication for production deployment
+- ✅ **API Key Protection** - Keys stored in environment variables only
+
+---
+
+## 🎓 **Use Cases**
+
+### **For Security Analysts**
+- **Rapid Triage** - Quickly assess indicators during incident response
+- **Context Generation** - Get AI explanations to include in reports
+- **Training Tool** - Learn about threats through natural language descriptions
+- **Time Savings** - Reduce manual lookups across multiple tools
+
+### **For Organizations**
+- **Security Awareness** - Educate employees about web threats in real-time
+- **Phishing Prevention** - Analyze suspicious emails and links before clicking
+- **Supply Chain Security** - Verify external scripts and resources
+- **Compliance** - Assess vendor websites for security compliance
+
+### **For Developers**
+- **Security Testing** - Evaluate security headers during development
+- **Code Review** - Check external dependencies and APIs
+- **Learning Resource** - Understand security best practices
+- **Bug Bounty Hunting** - Identify security misconfigurations
+
+### **For Everyone**
+- **Safe Browsing** - Check website security before entering credentials
+- **Phishing Detection** - Verify suspicious links and emails
+- **Education** - Learn about cybersecurity threats
+- **Peace of Mind** - Browse with confidence
+
+---
+
+## 🌟 **Real-World Impact**
+
+### **Industry Benefits**
+
+**For SOC Teams:**
+- Reduces alert fatigue by providing context
+- Speeds up incident response by 60%
+- Improves analyst training and knowledge retention
+- Facilitates better communication with non-technical stakeholders
+
+**For Enterprises:**
+- Reduces successful phishing attacks by 45%
+- Increases security awareness across all departments
+- Provides measurable security posture improvements
+- Enables proactive threat hunting
+
+**For Individuals:**
+- Protects against credential theft and malware
+- Prevents financial fraud and identity theft
+- Empowers users to make informed security decisions
+- Builds cybersecurity awareness
+
+---
+
+## 📈 **Threat Score Meanings**
+
+| Score | Indicator | Meaning | Action |
+|-------|-----------|---------|--------|
+| **CLEAN** | 🟢 | No threats detected | Safe to interact |
+| **LOW** | 🟡 | Minor concerns | Proceed with caution |
+| **MEDIUM** | 🟠 | Suspicious patterns | Investigate further |
+| **HIGH** | 🔴 | Known malicious | Avoid/block |
+| **CRITICAL** | 🚨 | Actively dangerous | Block immediately |
+
+---
+
 ## 🏗️ **Technical Architecture**
 
 ### **Frontend (Chrome Extension)**
@@ -237,88 +319,6 @@ aiofiles==23.2.1          # Async file operations
 ```bash
 pip install -r requirements.txt
 ```
-
----
-
-## 🔐 **Security & Privacy**
-
-### **Privacy-First Design**
-- ✅ **Local Processing** - All analysis happens locally or via your private backend
-- ✅ **No Data Collection** - Extension doesn't collect or store browsing history
-- ✅ **Minimal Permissions** - Only requests necessary Chrome API access
-- ✅ **No Telemetry** - Zero tracking or analytics
-- ✅ **Open Source** - Full transparency of code and operations
-
-### **Security Best Practices**
-- ✅ **Input Validation** - All user inputs sanitized and validated
-- ✅ **CSP Compliant** - Content Security Policy enforced
-- ✅ **Rate Limiting** - Backend API protected from abuse
-- ✅ **HTTPS Only** - Secure communication for production deployment
-- ✅ **API Key Protection** - Keys stored in environment variables only
-
----
-
-## 🎓 **Use Cases**
-
-### **For Security Analysts**
-- **Rapid Triage** - Quickly assess indicators during incident response
-- **Context Generation** - Get AI explanations to include in reports
-- **Training Tool** - Learn about threats through natural language descriptions
-- **Time Savings** - Reduce manual lookups across multiple tools
-
-### **For Organizations**
-- **Security Awareness** - Educate employees about web threats in real-time
-- **Phishing Prevention** - Analyze suspicious emails and links before clicking
-- **Supply Chain Security** - Verify external scripts and resources
-- **Compliance** - Assess vendor websites for security compliance
-
-### **For Developers**
-- **Security Testing** - Evaluate security headers during development
-- **Code Review** - Check external dependencies and APIs
-- **Learning Resource** - Understand security best practices
-- **Bug Bounty Hunting** - Identify security misconfigurations
-
-### **For Everyone**
-- **Safe Browsing** - Check website security before entering credentials
-- **Phishing Detection** - Verify suspicious links and emails
-- **Education** - Learn about cybersecurity threats
-- **Peace of Mind** - Browse with confidence
-
----
-
-## 🌟 **Real-World Impact**
-
-### **Industry Benefits**
-
-**For SOC Teams:**
-- Reduces alert fatigue by providing context
-- Speeds up incident response by 60%
-- Improves analyst training and knowledge retention
-- Facilitates better communication with non-technical stakeholders
-
-**For Enterprises:**
-- Reduces successful phishing attacks by 45%
-- Increases security awareness across all departments
-- Provides measurable security posture improvements
-- Enables proactive threat hunting
-
-**For Individuals:**
-- Protects against credential theft and malware
-- Prevents financial fraud and identity theft
-- Empowers users to make informed security decisions
-- Builds cybersecurity awareness
-
----
-
-## 📈 **Threat Score Meanings**
-
-| Score | Indicator | Meaning | Action |
-|-------|-----------|---------|--------|
-| **CLEAN** | 🟢 | No threats detected | Safe to interact |
-| **LOW** | 🟡 | Minor concerns | Proceed with caution |
-| **MEDIUM** | 🟠 | Suspicious patterns | Investigate further |
-| **HIGH** | 🔴 | Known malicious | Avoid/block |
-| **CRITICAL** | 🚨 | Actively dangerous | Block immediately |
 
 ---
 
