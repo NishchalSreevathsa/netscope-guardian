@@ -371,15 +371,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 **Support & Contact**
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/netscope-guardian/issues)
-- **Documentation**: [Full Docs](https://docs.netscope-guardian.com)
-- **Email**: support@netscope-guardian.com
-- **Twitter**: [@NetScopeGuard](https://twitter.com/NetScopeGuard)
-
----
-
 ## ⭐ **Star History**
 
 If you find this project useful, please consider giving it a star on GitHub!
@@ -401,17 +392,6 @@ If you find this project useful, please consider giving it a star on GitHub!
 - **Dependencies**: 10 (carefully selected)
 - **Development Time**: Academic project
 - **License**: MIT (Open Source)
-
----
-
-## 🎯 **Quick Links**
-
-- [Installation Guide](#installation)
-- [Usage Guide](#usage-guide)
-- [API Documentation](https://docs.netscope-guardian.com/api)
-- [Security Policy](SECURITY.md)
-- [Changelog](CHANGELOG.md)
-- [FAQ](FAQ.md)
 
 ---
 
