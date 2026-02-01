@@ -119,12 +119,12 @@ NetScope Guardian bridges the gap between raw security data and actionable intel
 
 **For SOC Teams:**
 - Reduces alert fatigue by providing context
-- Speeds up incident response by 60%
+- Speeds up incident response
 - Improves analyst training and knowledge retention
 - Facilitates better communication with non-technical stakeholders
 
 **For Enterprises:**
-- Reduces successful phishing attacks by 45%
+- Reduces successful phishing attacks 
 - Increases security awareness across all departments
 - Provides measurable security posture improvements
 - Enables proactive threat hunting
